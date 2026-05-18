@@ -7,11 +7,11 @@ A comprehensive machine learning system designed to forecast product demand for 
 - Visit docs/report.md to view the report written by me
 
 ## 🚀 Key Features
-- **Automated Data Pipeline:** Fetches the `Dingdong-Inc/FreshRetailNet-50K` dataset directly from Hugging Face Hub, cleans it, and handles missing weather values using linear interpolation.
-- **Advanced Time-Series Modeling:** Uses `MLForecast` to automatically generate highly predictive lag features and rolling window statistics without data leakage.
-- **Multiple Algorithms:** Trains and evaluates Ridge Regression, XGBoost, and LightGBM concurrently.
-- **Robust Evaluation:** Employs time-series cross-validation to rigorously validate model performance.
-- **Production-Ready Serving:** Deploys the best model behind a scalable FastAPI layer orchestrated by Ray Serve.
+- Fetches the `Dingdong-Inc/FreshRetailNet-50K` dataset directly from Hugging Face Hub, cleans it, and handles missing weather values using linear interpolation.
+- Uses `MLForecast` to automatically generate highly predictive lag features and rolling window statistics without data leakage.
+- Trains and evaluates Ridge Regression, XGBoost, and LightGBM concurrently.
+- Employs time-series cross-validation to rigorously validate model performance.
+- Deploys the best model behind a scalable FastAPI layer orchestrated by Ray Serve.
 
 ---
 
@@ -91,11 +91,11 @@ Once the server is running, you can access the interactive API documentation (Sw
 ---
 
 ## 🚀 Tính năng chính
-- **Pipeline Dữ liệu Tự động:** Tải trực tiếp bộ dữ liệu `Dingdong-Inc/FreshRetailNet-50K` từ Hugging Face, làm sạch và xử lý các giá trị thời tiết bị thiếu bằng phương pháp nội suy tuyến tính (linear interpolation).
-- **Mô hình Chuỗi thời gian Tiên tiến:** Sử dụng framework `MLForecast` để tự động sinh ra các đặc trưng trễ (lag features) và trung bình trượt (rolling window) tối ưu mà không lo rò rỉ dữ liệu.
-- **Đa Thuật toán:** Huấn luyện và đánh giá song song Ridge Regression, XGBoost, và LightGBM.
-- **Đánh giá Chặt chẽ:** Sử dụng phương pháp Time-Series Cross Validation để kiểm định độ ổn định của mô hình.
-- **Sẵn sàng cho Production:** Triển khai API cho mô hình tốt nhất thông qua FastAPI, được quản lý, mở rộng (scale) linh hoạt bằng Ray Serve.
+- Tải trực tiếp bộ dữ liệu `Dingdong-Inc/FreshRetailNet-50K` từ Hugging Face, làm sạch và xử lý các giá trị thời tiết bị thiếu bằng phương pháp nội suy tuyến tính (linear interpolation).
+- Sử dụng framework `MLForecast` để tự động sinh ra các đặc trưng trễ (lag features) và trung bình trượt (rolling window) tối ưu mà không lo rò rỉ dữ liệu.
+- Huấn luyện và đánh giá song song Ridge Regression, XGBoost, và LightGBM.
+- Sử dụng phương pháp Time-Series Cross Validation để kiểm định độ ổn định của mô hình.
+- Triển khai API cho mô hình tốt nhất thông qua FastAPI, được quản lý, mở rộng (scale) linh hoạt bằng Ray Serve.
 
 ---
 
@@ -122,7 +122,6 @@ Once the server is running, you can access the interactive API documentation (Sw
 └── README.md
 ```
 
-*(Lưu ý: `src/feature_engineering.py` và `src/train.py` là một phần của luồng pipeline cũ và đã được thay thế bởi `mlforecast_train.py`.)*
 
 ---
 
