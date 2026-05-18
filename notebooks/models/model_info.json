@@ -1,0 +1,48 @@
+{
+  "best_model": "LightGBM",
+  "best_model_path": "models/lightgbm.txt",
+  "metrics": {
+    "MAE": {
+      "Ridge": 0.3745,
+      "XGBoost": 0.3626,
+      "LightGBM": 0.3613
+    },
+    "RMSE": {
+      "Ridge": 0.6004,
+      "XGBoost": 0.5947,
+      "LightGBM": 0.5892
+    },
+    "MAPE%": {
+      "Ridge": 51.34,
+      "XGBoost": 51.64,
+      "LightGBM": 51.44
+    }
+  },
+  "feature_cols": [
+    "day_of_week",
+    "week_of_year",
+    "month",
+    "year",
+    "is_weekend",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_28",
+    "rolling_mean_7",
+    "rolling_mean_14",
+    "rolling_std_7",
+    "discount_pct",
+    "is_promotion",
+    "holiday",
+    "stockout_lag_1",
+    "product_category",
+    "product_subcategory",
+    "location",
+    "store_id",
+    "avg_temperature",
+    "avg_humidity",
+    "avg_wind_level",
+    "precpt"
+  ],
+  "target_col": "units_ordered"
+}

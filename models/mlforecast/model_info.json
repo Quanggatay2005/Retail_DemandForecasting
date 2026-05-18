@@ -1,0 +1,35 @@
+{
+  "framework": "mlforecast",
+  "horizon": 7,
+  "city_id": 0,
+  "model_path": "models/mlforecast/mlf_model.pkl",
+  "metrics": {
+    "MAE": {
+      "XGBRegressor": 0.4297,
+      "LGBMRegressor": 0.4326
+    },
+    "RMSE": {
+      "XGBRegressor": 0.6916,
+      "LGBMRegressor": 0.6932
+    },
+    "MAPE%": {
+      "XGBRegressor": 61.58,
+      "LGBMRegressor": 61.87
+    }
+  },
+  "cv_metrics": {
+    "CV_MAE": {
+      "XGBRegressor": 0.3768,
+      "LGBMRegressor": 0.3749
+    },
+    "CV_RMSE": {
+      "XGBRegressor": 0.6214,
+      "LGBMRegressor": 0.6177
+    },
+    "CV_MAPE%": {
+      "XGBRegressor": 54.31,
+      "LGBMRegressor": 54.26
+    }
+  },
+  "best_model": "XGBRegressor"
+}
